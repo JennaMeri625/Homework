@@ -7,10 +7,12 @@ body {
 }
 .numbers-box {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    position: relative;
+    width: 100%;
 }
 .color-box {
+    box-sizing: border-box;
     border: 1px solid black;
     display: flex;
     justify-content: center;
@@ -18,8 +20,9 @@ body {
     color: white;
     font-size: 50pt;
     text-shadow: 1px 1px 4px black;
-    height: 200px;
-    width: 200px;
+    width: 100%;
+    max-width: 50%;
+    height: 175px;
 }
 .color-box-1 {
     background-color: red;
@@ -38,6 +41,11 @@ body {
 }
 .color-box-6 {
     background-color: purple;
+}
+
+@media only screen and (min-width: 600) {
+    min-width: 33.33%;
+    
 }
 
     /*
